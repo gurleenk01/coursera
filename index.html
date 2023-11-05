@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="util.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+        <header class="container">
+           <button id="menu-toggle">&#8801;</button>
+            <nav class="navbar flex items-center space-between">
+                <div class ="left flex">
+                  
+                    <img src="images/logo.png" >
+                    <div class="dropdown mx-2">
+                        <button class="btn">Explore </button>
+                        <div class="dropdown-content">
+                            <a href="#">Option1</a>
+                            <a href="#">Option2</a>
+                            <a href="#">Option3</a>
+                        </div>
+                    </div>
+                    <input class="search-container" placeholder="What do you want to learn? " class="mx-2 " type="text"> 
+                </div>
+                <div class ="right flex " id="right">
+                    <ul class="flex items-center">
+                        <li>Online Degrees</li>
+                        <li>Find your career</li>
+                        <li><a href="#">Login</a></li>
+                        <li><button class="join"> Join for free</button></li>
+                    </ul>
+            
+                </div>
+            </nav>
+        </header>
+
+ <div class="allbody">
+        <div class="cards">
+            <div class="section2">
+               
+                <div class="filter-list">
+                
+                    <div class="filter">
+                   
+                          <div class="close-button" id="closeButton"><i class="fa-solid fa-xmark fa-beat"></i></div>
+                          <h1>Filter by</h1>
+                          <h3>Subject</h3>
+                           <div> 
+                            <div>
+                              <label class="checkbox-label">
+                                  <input id="1"  type="checkbox" value="1" />
+                                  Arts and Humanities
+                              </label>
+                              </div>
+                              <div>
+                                <label class="checkbox-label">
+                                    <input id="2"  type="checkbox" value="2" />
+                                    Business
+                                </label>
+                                </div>
+                                <div>
+                                  <label class="checkbox-label">
+                                      <input id="3"  type="checkbox" value="3" />
+                                      Computer Science
+                                  </label>
+                                  </div>
+                                  <div>
+                                    <label class="checkbox-label">
+                                        <input id="4"  type="checkbox" value="4" />
+                                        Data Analysis
+                                    </label>
+                                    </div>
+                              
+                              
+                            </div>
+                       
+                            <h3>Skills</h3>
+                            <div>
+                              <div>
+                                <label class="checkbox-label">
+                                    <input id="a"  type="checkbox" value="a" />
+                                    Account Management
+                                </label>
+                                <div>
+                                  <label class="checkbox-label">
+                                      <input id="b"  type="checkbox" value="b" />
+                                      Accounting
+                                  </label>
+                                  </div>
+                                  <div>
+                                    <label class="checkbox-label">
+                                        <input id="c"  type="checkbox" value="c" />
+                                        Adaptability
+                                    </label>
+                                    </div>
+                                    <div>
+                                      <label class="checkbox-label">
+                                          <input id="d"  type="checkbox" value="d" />
+                                          Advertising
+                                      </label>
+                                      </div>
+                                
+                                 
+                            </div>
+
+                            <h3>Language</h3>
+                            <div>
+                              <div>
+                                <label class="checkbox-label">
+                                    <input id="arabic"  type="checkbox" value="beginner" />
+                                    Arabic
+                                </label>
+                                </div>
+                                <div>
+                                  <label class="checkbox-label">
+                                      <input id="English"  type="checkbox" value="beginner" />
+                                      English
+                                  </label>
+                                  </div>
+                                  <div>
+                                    <label class="checkbox-label">
+                                        <input id="chinese"  type="checkbox" value="beginner" />
+                                        Chinese
+                                    </label>
+                                    </div>
+                                    <div>
+                                      <label class="checkbox-label">
+                                          <input id="hindi"  type="checkbox" value="beginner" />
+                                          Hindi
+                                      </label>
+                                      </div>
+                                 
+                            </div>
+
+
+                            <h3>Level</h3>
+                            <div id="levels">
+                                <div>
+                                <label class="checkbox-label">
+                                    <input id="beginner"  type="checkbox" value="beginner" />
+                                    Beginner
+                                </label>
+                                </div>
+                                <div>
+                                  <label class="checkbox-label">
+                                      <input id="intermediate"  type="checkbox" value="intermediate" />
+                                      Intermediate
+                                  </label>
+                                  </div>
+                                  <div>
+                                    <label class="checkbox-label">
+                                        <input id="advanced"  type="checkbox" value="advanced" />
+                                        Advanced
+                                    </label>
+                                    </div>
+                                    <div>
+                                      <label class="checkbox-label">
+                                          <input id="mixed"  type="checkbox" value="mixed" />
+                                          Mixed
+                                      </label>
+                                      </div>
+                            
+                                 
+                            </div>
+
+
+                            <h3>Duration</h3>
+                            <div>
+                              <div>
+                                <label class="checkbox-label">
+                                    <input id="2hrs"  type="checkbox" value="2hrs" />
+                                    Less Than 2 Hours
+                                </label>
+                                </div>
+                                <div>
+                                  <label class="checkbox-label">
+                                      <input id="1wk"  type="checkbox" value="1wk" />
+                                      1-4 weeks
+                                  </label>
+                                  </div>
+                                  <div>
+                                    <label class="checkbox-label">
+                                        <input id="1month"  type="checkbox" value="1month" />
+                                        1-3 Months
+                                    </label>
+                                    </div>
+                                    <div>
+                                      <label class="checkbox-label">
+                                          <input id="3month"  type="checkbox" value="3month" />
+                                          3-6 Months
+                                      </label>
+                                      </div>
+
+                                 
+                                    </div>    
+                            </div>  
+                  </div> 
+                </div>   
+              </div>   
+          </div>
+              
+                <div class="content">
+                  
+                   <div class="filter-button" id="filterButton">
+                    <div><img class="filter-img" src="images/filter-btn img.png" style="height: 35px; width: 90px;"></div>
+                    <div><p style="color: black; font-size: smaller; "><b>Sort By: </b><u>Best Match &#11167</u></p></div>
+                  </div>
+                  
+                   
+                  
+                    <div class="card" data-category="beginner 3month" > 
+                        <div><img class="cardimg" src="/images/img1.webp"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png" ></span>IBM</p>
+                          <h3>IBM Full Stack Developer</h3>
+                          <p><b>Skills you'll gain: </b> Cloud Computing, Python Programming, Cloud Applications, IBM Cloud, Application Development, Computer Programming... </p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.6</b> (40.7k reviews)</p>
+                            <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="beginner 3month" > 
+                      <div><img class="cardimg" src="/images/img2.webp"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/73/e03b13a8e44df9b19eb279e5506396/360-x-360.png" ></span>Meta</p>
+                          <h3>Meta Front-End Developer</h3>
+                          <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework), Web Development, User Experience..</p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                            <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="mixed 1month " > 
+                      <div><img class="cardimg" src="/images/img3.png"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="https://coursera-university-assets.s3.amazonaws.com/74/7ae340ec6911e5b395490a2a565172/JHU-Logo-Square-Mini_180px.png" ></span>John Hopkins University</p>
+                          <h3>HTML,CSS and javascript for Web Developers</h3>
+                          <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, Web Development</p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                            <p>Mixed · Course · 1 - 3 Months</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="beginner 3month" > 
+                      <div><img class="cardimg" src="/images/img4.png"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png" ></span>Univeristy of Michigan</p>
+                          <h3>Web Design For Everybody</h3>
+                          <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework)..</p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                            <p>Beginner · Specialization · 3 - 6 Months</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-category="beginner 1wk" > 
+                      <div><img class="cardimg" src="/images/img5.png"></div>
+                      <div class="card-cont">
+                        <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/73/e03b13a8e44df9b19eb279e5506396/360-x-360.png" ></span>Meta</p>
+                        <h3>Introdution to Front-end Development</h3>
+                        <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework), Web Development, User Experience..</p>
+                        <div >
+                          <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                          <p>Beginner · Course · 1 - 4 Weeks</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                      
+                    <div class="card" data-category="beginner 1month" > 
+                      <div><img class="cardimg" src="/images/img6.png"></div>
+                      <div class="card-cont">
+                        <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png" ></span>IBM</p>
+                        <h3>Introduction to HTML, CSS, JavaScript</h3>
+                        <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework), Web Development</p>
+                        <div >
+                          <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                          <p>Beginner · Course · 1 - 3 Months</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="card" data-category="intermediate 2hrs" > 
+                      <div><img class="cardimg" src="/images/img7.png"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/89/a0db8f3ea3417ca90d4f3a4ca1d73e/coursera-projectnetwork-purplesquare.png" ></span>Coursera Project Network</p>
+                          <h3>Meta Front-End Developer</h3>
+                          <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework), Web Development</p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                            <p>Intermediate · Guided Project · Less Than 2 hrs</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="beginner 3month" > 
+                      <div><img class="cardimg" src="/images/img8.webp"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/73/e03b13a8e44df9b19eb279e5506396/360-x-360.png" ></span>Meta</p>
+                          <h3>Meta Back-End Developer</h3>
+                          <p><b>Skills you'll gain: </b> Python programming, Databases, HTML and CSS, Database Design</p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                            <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="beginner 3month" > 
+                      <div><img class="cardimg" src="/images/img9.webp"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png" ></span>IBM</p>
+                          <h3>IBM Front-End Developer</h3>
+                          <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework)</p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                            <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="beginner 1month" > 
+                      <div><img class="cardimg" src="/images/img10.png"></div>
+                      <div class="card-cont">
+                        <p><span><img class="company" src="https://coursera-university-assets.s3.amazonaws.com/66/4d1f6067b511e599c247e28e57110c/Logo-B-for-Coursera.png" ></span>University Of Cali..</p>
+                        <h3>Introduction to Web development</h3>
+                        <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework), Web Development</p>
+                        <div >
+                          <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                          <p>Beginner · Course · 1 - 3 Months</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    <div class="card" data-category="beginner 3month" > 
+                      <div><img class="cardimg" src="/images/img11.webp"></div>
+                        <div class="card-cont">
+                          <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Google-G_360x360.png" ></span>Google</p>
+                          <h3>Google UX Design</h3>
+                          <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework)</p>
+                          <div >
+                            <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                            <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                          </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card" data-category="beginner 3month" > 
+                      <div><img class="cardimg" src="/images/img12.webp"></div>
+                      <div class="card-cont">
+                        <p><span><img class="company" src="http://coursera-university-assets.s3.amazonaws.com/bb/f5ced2bdd4437aa79f00eb1bf7fbf0/IBM-Logo-Blk---Square.png" ></span>IBM</p>
+                        <h3>IBM Back-end Developer</h3>
+                        <p><b>Skills you'll gain: </b> HTML and CSS, Javascript, Front-End Web Development, React (web framework), Web Development, User Experience..</p>
+                        <div >
+                          <p>⭐<b style="color: black;">4.7</b> (14.1k reviews)</p>
+                          <p>Beginner · Professional Certificate · 3 - 6 Months</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                    
+              
+
+               </div>
+            </div>
+ 
+ 
+            
+            <div class="footer1" >
+              <footer class="flex">
+                
+                  <div class="footer-column">
+                    <h3>Popular AI Content</h3>
+                    <ul>
+                      <li><a href="#">AI for Business Specialization</a></li>
+                      <li><a href="#">AI for everyone</a></li>
+                      <li><a href="#">AI Product Management</a></li>
+                      <li><a href="#">Deep Learning Specialization</a></li>
+                      <li><a href="#">Generative AI for everyone</a></li>
+                      <li><a href="#">IBM applied AI Professional Certificate</a></li>
+                      <li><a href="#">Machine Learning Specialization</a></li>
+                      <li><a href="#">Natural Language PRocessing</a></li>
+                      <li><a href="#">Prompt Engineering for Chatgpt</a></li>
+                      <li><a href="#">Supervised Machine Learning</a></li>
+                      <li><a href="#">See all AI courses</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-column">
+                    <h3>Popular Programs</h3>
+                    <ul>
+                      <li><a href="#">Google Cybersecurity </a></li>
+                      <li><a href="#">Google Data Analytics</a></li>
+                      <li><a href="#">Google Digital Marketing</a></li>
+                      <li><a href="#">Google IT Automation</a></li>
+                      <li><a href="#">Google IT support</a></li>
+                      <li><a href="#">Google Project Management</a></li>
+                      <li><a href="#">Google SEO Fundamentals</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-column">
+                    <h3>Popular Skills</h3>
+                    <ul>
+                      <li><a href="#">Cybersecurity</a></li>
+                      <li><a href="#">Data Analytics</a></li>
+                      <li><a href="#">Data Science</a></li>
+                      <li><a href="#">Digital Marketing</a></li>
+                      <li><a href="#">Excel</a></li>
+                      <li><a href="#">Power BI</a></li>
+                      <li><a href="#">Python</a></li>
+                      <li><a href="#">SQL</a></li>
+                      <li><a href="#">Google Courses</a></li>
+                      <li><a href="#">Product Management</a></li>
+                      <li><a href="#">See all courses</a></li>
+            
+                    </ul>
+                  </div>
+                  <div class="footer-column">
+                    <h3>Popular Career Resources</h3>
+                    <ul>
+                      <li><a href="#">Become a Data Analyst</a></li>
+                      <li><a href="#">CAPM Certification </a></li>
+                      <li><a href="#">Data Science Career Guide</a></li>
+                      <li><a href="#">Digital Marketing Career Guide</a></li>
+                      <li><a href="#">Excel Certification</a></li>
+                      <li><a href="#">Power Certification</a></li>
+                      <li><a href="#">Python</a></li>
+                      <li><a href="#">SQL Certification</a></li>
+                      <li><a href="#">Google Courses</a></li>
+                      <li><a href="#">Product Management</a></li>
+                      <li><a href="#">See all career Rescources</a></li>
+            
+                    </ul>
+                  </div>
+                
+              </footer>
+            </div>
+
+
+
+<div >
+  <footer class="flex">
+    
+      <div class="footer-column">
+        <h3>Coursera</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">What we offer</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#"></a>Careers</li>
+          <li><a href="#"></a>Catalog</li>
+          <li><a href="#"></a>Coursera plus</li>
+          <li><a href="#"></a>Certificates</li>
+          <li><a href="#"></a>Degrees</li>
+          <li><a href="#"></a>For Enterprise</li>
+          <li><a href="#"></a>For Government</li>
+          <li><a href="#"></a>For Campus</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Community</h3>
+        <ul>
+          <li><a href="#">Learners</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#"></a>Beta Testers</li>
+          <li><a href="#"></a>Translators</li>
+          <li><a href="#"></a>Blog</li>
+          <li><a href="#"></a>Tech Blog</li>
+          <li><a href="#"></a> Teaching Center</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>More</h3>
+        <ul>
+          <li><a href="#"></a>Press</li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#"></a> Privacy</li>
+          <li><a href="#"></a>Help</li>
+          <li><a href="#"></a>Accessibility</li>
+          <li><a href="#"></a>Contact</li>
+          <li><a href="#"></a>Articles</li>
+          <li><a href="#"></a>Directory</li>
+          <li><a href="#"></a>Affiliates</li>
+          <li><a href="#"></a>Do Not Sell</li>
+
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul>
+          <li><a href="#"><img  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" style="height: 55px; width: 180px;" ></a></li>
+          <li><a href="#"><img  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" style="height: 55px; width: 180px;" ></a></li>
+          <li><a href="#"><img  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/2018-B-Corp-Logo-Black-S.png?auto=format%2Ccompress&dpr=1&w=151&h=120&q=40" alt="" style="height: 120px; width: 82px;"></a></li>
+        </ul>
+      </div>
+    
+  </footer>
+</div>
+
+<div>
+    <footer class="footer2 ">
+      <ul class="flex">
+        <li><a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/facebook.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" style="height: 28px; width: 28px;"></a></li>
+        <li><a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/linkedin.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" style="height: 28px; width: 28px;"></a></li>
+        <li><a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/twitter.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40"  style="height: 28px; width: 28px;"></a></li>
+        <li><a href="#"> <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/youtube.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" style="height: 28px; width: 28px;"></a></li>
+        <li><a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/instagram.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40"style="height: 28px; width: 28px;" ></a></li>
+        <li><a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/images/9b7e964107839c77644d7e7d15035b73.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40" style="height: 28px; width: 28px;" ></a></li>
+        
+      </ul>
+    </footer>
+</div>
+        
+      
+<script src="filter.js"></script>
+</body>
+
+
+</html>
